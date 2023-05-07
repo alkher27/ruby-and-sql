@@ -47,6 +47,14 @@ activity.save
 # 2. Display all the activities between the salesperson used above
 # and one of the contacts (sample output below):
 
+apple_activity = Activity.where({
+    "salesperson_id" => block_salesperson["id"],
+    "contact_id" => cook_contact["id"]})
+#puts apple_activity.inspect
+puts "Activities between Ben and Tim"
+for activity in apple_activity
+    puts activity["note"]
+end
 # ---------------------------------
 # Activities between Ben and Tim Cook:
 # - quick checkin over facetime

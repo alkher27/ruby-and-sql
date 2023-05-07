@@ -16,14 +16,38 @@
 #   and Contact).  Follow the steps below for Salesperson, and then repeat
 #   for Activity.
 
-# 1. in terminal, generate a model and table for ______
-# rails generate model _____
+# - generate model and table for companies
+
+# 1. in terminal, generate a model and table for Company
+# rails generate model Company
 
 # 2. open newly generated files
+# - app/models/company.rb
+# - db/migrate/*_create_companies.rb
 
 # 3. in the db/migrate file, add relevant columns matching our domain model
+# see code in db/migrate/*_create_companies.rb
 
 # 4. in terminal, execute the migration file
 # rails db:migrate
 
 # 5. check the schema to confirm the change
+# - db/schema.rb
+
+# - generate model and table for contacts
+
+# 1. in terminal, generate a model and table for Contact
+# rails generate model Contact
+
+# 2. open newly generated files
+# - app/models/contact.rb
+# - db/migrate/*_create_contacts.rb
+
+# 3. in the db/migrate file, add relevant columns matching our domain model
+# see code in db/migrate/*_create_contacts.rb
+
+# 4. in terminal, execute the migration file
+# rails db:migrate
+
+# 5. check the schema to confirm the change
+# - db/schema.rb
